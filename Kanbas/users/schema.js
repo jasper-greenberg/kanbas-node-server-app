@@ -1,9 +1,5 @@
 import mongoose from "mongoose";
 
-// select a database to use
-const dbName = "kanbas";
-mongoose.connection.useDb(dbName);
-
 const userSchema = new mongoose.Schema(
     {
         username: { type: String, required: true, unique: true },
