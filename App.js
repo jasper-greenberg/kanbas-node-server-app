@@ -9,6 +9,7 @@ import Lab5 from "./Lab5.js";
 import CourseRoutes from "./Kanbas/courses/routes.js";
 import ModuleRoutes from "./Kanbas/modules/routes.js";
 import UserRoutes from "./Kanbas/users/routes.js";
+import QuizRoutes from "./Kanbas/quizzes/routes.js";
 
 const CONNECTION_STRING = process.env.KANBAS_DB_CONNECTION_STRING;
 const DB_NAME = process.env.DB_NAME;
@@ -44,5 +45,6 @@ Lab5(app);
 CourseRoutes(app);
 ModuleRoutes(app);
 UserRoutes(app);
+QuizRoutes(app);
 
 app.listen(process.env.PORT || 4000);

@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const quizSchema = new mongoose.Schema(
     {
         id: Number,
-        name: String,
+        title: String,
         description: String,
         course_id: String,
         published: {
@@ -52,7 +52,7 @@ const quizSchema = new mongoose.Schema(
         },
         due_date: Date,
         available_date: Date,
-        until_date: Date,
+        available_until_date: Date,
         questions: [
             {
                 id: String,
@@ -73,3 +73,5 @@ const quizSchema = new mongoose.Schema(
     },
     { collection: "quizzes" }
 );
+
+export default quizSchema;
