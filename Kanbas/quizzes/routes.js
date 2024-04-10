@@ -7,7 +7,7 @@ export default function QuizRoutes(app) {
     };
 
     const deleteQuiz = async (req, res) => {
-        const status = await dao.deleteUser(req.params.userId);
+        const status = await dao.deleteQuiz(req.params.quizId);
         res.json(status);
     };
 
@@ -24,9 +24,8 @@ export default function QuizRoutes(app) {
     };
 
     const updateQuiz = async (req, res) => {
-        const { userId } = req.params;
-        const status = await dao.updateQuiz(userId, req.body);
-        const currentUser = await dao.findQuizById(userId);
+        const { quizId } = req.params;
+        const status = await dao.updateQuiz(quizId, req.body);
         res.json(status);
     };
 
