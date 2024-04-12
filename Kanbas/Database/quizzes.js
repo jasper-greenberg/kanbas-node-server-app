@@ -1,6 +1,5 @@
 export default [
     {
-        "id": "1",
         "title": "Q1 - HTML",
         "description": "Quiz on HTML",
         "course_id": "CS4550",
@@ -86,7 +85,6 @@ export default [
         ]
     },
     {
-        "id": "2",
         "title": "Q2 - CSS",
         "description": "Quiz on CSS",
         "course_id": "CS4550",
@@ -132,7 +130,6 @@ export default [
         ]
     },
     {
-        "id": "3",
         "title": "Q3 - JavaScript",
         "description": "Quiz on JavaScript",
         "course_id": "CS4550",
