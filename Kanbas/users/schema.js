@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema(
     {
@@ -13,6 +13,12 @@ const userSchema = new mongoose.Schema(
             enum: ["STUDENT", "FACULTY", "ADMIN", "USER"],
             default: "USER",
         },
+        courses: [
+            {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: "courses",
+            },
+        ],
     },
     { collection: "users" }
 );
