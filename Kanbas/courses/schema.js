@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const courseSchema = new mongoose.Schema(
     {
         name: String,
-        number: { type: String, required: true, unique: true },
+        number: { type: String, required: true },
         startDate: Date,
         endDate: Date,
         image: String
